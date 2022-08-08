@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+	font-size: 16px;
+	font-family: 'Karla', sans-serif;
+	background-color: hsl(204, 43%, 93%);
+	max-width: 1440px;
+}
+
+.container {
+  height: 100%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	background-color: #fff;
+	margin: 5rem;
+	border-radius: 10px;
+}
+
+.top {
+	padding: 3rem;
+}
+
+.top h1 {
+	font-size: 48px;
+	margin-bottom: 2rem;
+	color: hsl(179, 62%, 43%);
+}
+
+.top h2 {
+	color: hsl(71, 73%, 54%);
+	margin-bottom: 1.5rem;
+	font-size: 36px;
+}
+
+.top p {
+	color: hsl(218, 22%, 67%);
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.left {
+	padding: 3rem;
+	background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+}
+
+.right {
+	padding: 3rem;
+	background-color: hsl(179, 65%, 50%);
+  border-bottom-right-radius: 10px;
+}
+
+h3 {
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.price span {
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+	display: inline;
+	margin-right: 0.5rem;
+}
+
+.price p {
+	color: hsl(179, 65%, 50%);
+	font-size: 20px;
+}
+
+.full {
+	color: hsl(204, 43%, 93%);
+	font-size: 26px;
+	margin-bottom: 3.5rem;
+}
+
+button {
+	color: #fff;
+	background-color: hsl(71, 73%, 54%);
+	padding: 1.2rem;
+	width: 100%;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	line-height: 1.5;
+}
+
+li {
+	font-size: 20px;
+	color: hsl(204, 43%, 93%);
+}
+
+@media only screen and (max-width: 400px) {
+
+
+	.container {
+		display: flex;
+		flex-direction: column;
+  
+  
+    margin: 2rem 1rem;
+
+	}
+
+  .top, .left, .right {
+    min-height: 275px;
+  }
+
+  .top {
+    padding: 2rem  1.5rem;
+  }
+
+  .top h1 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .top h2 {
+    font-size: 18px;
+  }
+
+  .top p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 2rem 1.5rem;
+    border-radius: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .price span {
+    font-size: 28px;
+  }
+
+  .full {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .right {
+    padding: 2rem 1.5rem;
+     border-radius: 0 0px 10px 10px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
